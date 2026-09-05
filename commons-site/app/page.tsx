@@ -8,9 +8,9 @@ export default function HomePage() {
   return (
     <>
       <MarketingHero />
-      <MarketingPillars />
-      <MarketingSurfaceFrames linkToProduct />
       <MarketingAudienceStrip />
+      <MarketingSurfaceFrames linkToProduct />
+      <MarketingPillars />
       <MarketingCloseCta />
     </>
   )

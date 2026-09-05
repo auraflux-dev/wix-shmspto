@@ -32,21 +32,17 @@ const icons: Record<(typeof PILLARS)[number]['id'], ReactNode> = {
 
 export function MarketingPillars() {
   return (
-    <section className="border-b border-[var(--line)] bg-[var(--paper)]">
+    <section className="border-y border-[var(--line)] bg-[var(--paper-deep)]">
       <div className="mx-auto max-w-6xl px-5 py-16 sm:py-20">
-        <p className="text-sm font-semibold uppercase tracking-[0.14em] text-[var(--accent)]">
-          Built for today
-        </p>
-        <h2 className="mt-2 max-w-xl font-[family-name:var(--font-display)] text-3xl text-[var(--ink)] sm:text-4xl">
-          Flexible for tomorrow
+        <h2 className="max-w-xl font-[family-name:var(--font-display)] text-3xl text-[var(--ink)] sm:text-4xl">
+          What boards get done
         </h2>
+        <p className="mt-3 max-w-xl whitespace-pre-line text-[var(--ink-muted)]">
+          {`Four jobs that used to live in five tools.\nNow they live in one place.`}
+        </p>
         <ul className="mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
-          {PILLARS.map((pillar, i) => (
-            <li
-              key={pillar.id}
-              className="motion-stagger border-t border-[var(--line)] pt-5"
-              style={{ animationDelay: `${120 + i * 80}ms` }}
-            >
+          {PILLARS.map((pillar) => (
+            <li key={pillar.id} className="border-t border-[var(--line)] pt-5">
               <div className="mb-3 text-[var(--accent)]">{icons[pillar.id]}</div>
               <h3 className="text-lg font-semibold text-[var(--ink)]">{pillar.title}</h3>
               <p className="mt-2 text-sm leading-relaxed text-[var(--ink-muted)]">{pillar.body}</p>

@@ -10,7 +10,7 @@ export default function GalleryPage() {
     <div className="mx-auto max-w-5xl px-5 py-16">
       <h1 className="font-[family-name:var(--font-display)] text-4xl sm:text-5xl">Gallery</h1>
       <p className="mt-4 max-w-2xl whitespace-pre-line text-lg text-[var(--ink-muted)]">
-        {`Builds on ${PRODUCT_NAME}.\nDemo, private trials, and live schools (with permission).`}
+        {`Real product screens.\nRiverside demo, private trials, and live schools (with permission).`}
       </p>
       <ul className="mt-10 space-y-12">
         {GALLERY_ITEMS.map((item) => (

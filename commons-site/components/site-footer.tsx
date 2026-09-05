@@ -14,7 +14,7 @@ export function SiteFooter() {
             {PRODUCT_NAME}
           </p>
           <p className="whitespace-pre-line">{`${PRODUCT_TAGLINE}\nA product of ${LEGAL_ENTITY}.`}</p>
-          <p className="whitespace-pre-line text-[var(--ink)]">{CLOSE_SLOGAN}</p>
+          <p className="text-[var(--ink)]">{CLOSE_SLOGAN}</p>
         </div>
         <div className="grid grid-cols-2 gap-x-10 gap-y-2 text-sm">
           <Link href="/product" className="text-[var(--ink)] hover:underline">

@@ -41,9 +41,7 @@ export function MarketingSurfaceFrames({
                 }`}
               >
                 <div className={reverse ? 'lg:order-2' : undefined}>
-                  <h3 className="font-[family-name:var(--font-display)] text-2xl text-[var(--ink)]">
-                    {title}
-                  </h3>
+                  <h3 className="text-2xl font-semibold tracking-tight text-[var(--ink)]">{title}</h3>
                   <p className="mt-3 whitespace-pre-line text-[var(--ink-muted)]">{surface.body}</p>
                 </div>
                 <div className={reverse ? 'lg:order-1' : undefined}>

@@ -3,26 +3,28 @@ import { DEMO_URL } from '@/lib/pricing'
 
 export { DEMO_URL }
 
-export const HERO_HEADLINE = 'Built for today.\nFlexible for tomorrow.'
+export const HERO_EYEBROW = 'For PTOs, PTAs, and school communities'
+
+export const HERO_HEADLINE = 'Run your whole PTO in one place.'
 
 export const HERO_SUPPORT =
-  'A flexible, modern platform for education and community organizations.\nPublic site, family portal, and staff portal.'
+  'Public site. Family portal. Staff workspace.\nParents see your school. Not Pavilion.'
 
 export const PILLARS = [
   {
     id: 'engage',
     title: 'Engage',
-    body: 'Families and members join, renew, and stay in the loop.',
+    body: 'Families join, renew, and stay in the loop.',
   },
   {
     id: 'simplify',
     title: 'Simplify',
-    body: 'Programs, events, and volunteer sign-ups in one place.',
+    body: 'Programs, events, and volunteer sign-ups together.',
   },
   {
     id: 'sell',
     title: 'Sell',
-    body: 'Online and in-person storefronts on the school Square.',
+    body: 'Online and in-person sales on your school Square.',
   },
   {
     id: 'streamline',
@@ -69,4 +71,7 @@ export const AUDIENCES = [
   'Education nonprofits',
 ] as const
 
-export const CLOSE_SLOGAN = 'One platform.\nMore possibilities.\nStronger communities.'
+export const CLOSE_SLOGAN = 'Ready when your board is.'
+
+export const CLOSE_SUPPORT =
+  'Start with a branded trial.\nOr tour the Riverside demo first.'

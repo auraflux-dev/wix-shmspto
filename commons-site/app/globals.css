@@ -1,15 +1,15 @@
 @import "tailwindcss";
 
-/* Locked brand: Pavilion · ink + sea glass. Marketing tokens for onpavilion.com. */
+/* Locked brand: Pavilion · ink + sea glass. Cooler paper, stronger ink contrast. */
 :root {
-  --paper: #f1ede4;
-  --paper-deep: #e4ddd0;
-  --ink: #12231f;
-  --ink-muted: #3d4f49;
+  --paper: #f7f5f0;
+  --paper-deep: #ebe6dc;
+  --ink: #0d1e1a;
+  --ink-muted: #3a4f49;
   --accent: #0f6b5c;
-  --accent-soft: #c5ddd6;
-  --line: #cfc6b6;
-  --hero-glow: #1a4a42;
+  --accent-soft: #d7ebe5;
+  --line: #d9d2c6;
+  --hero-glow: #143f38;
   background: var(--paper);
   color: var(--ink);
 }
@@ -29,35 +29,91 @@ body {
 
 .hero-plane {
   background:
-    radial-gradient(1200px 600px at 70% 10%, rgba(15, 107, 92, 0.38), transparent 55%),
-    linear-gradient(160deg, #0c2824 0%, #163f38 42%, #1f4f46 100%);
+    radial-gradient(1000px 520px at 72% 8%, rgba(15, 107, 92, 0.42), transparent 58%),
+    linear-gradient(165deg, #081714 0%, #0f2d26 46%, #164038 100%);
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.375rem;
+  background: var(--ink);
+  padding: 0.75rem 1.25rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--paper);
+  transition: background-color 150ms ease, transform 120ms ease;
+}
+
+.btn-primary:hover {
+  background: var(--accent);
+}
+
+.btn-primary:active {
+  transform: scale(0.985);
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.375rem;
+  border: 1.5px solid var(--line);
+  padding: 0.75rem 1.25rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--ink);
+  transition: background-color 150ms ease, border-color 150ms ease, transform 120ms ease;
+}
+
+.btn-secondary:hover {
+  border-color: var(--ink);
+  background: #f4f0e8;
+}
+
+.btn-secondary:active {
+  transform: scale(0.985);
+}
+
+.btn-on-dark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.375rem;
+  background: #f7f5f0;
+  padding: 0.75rem 1.25rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #0d1e1a;
+  transition: background-color 150ms ease, transform 120ms ease;
+}
+
+.btn-on-dark:hover {
+  background: #ffffff;
+}
+
+.btn-on-dark-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.375rem;
+  border: 1.5px solid rgba(247, 245, 240, 0.5);
+  padding: 0.75rem 1.25rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #f7f5f0;
+  transition: background-color 150ms ease, transform 120ms ease;
+}
+
+.btn-on-dark-outline:hover {
+  background: rgba(255, 255, 255, 0.1);
 }
 
 @keyframes marketing-rise {
   from {
     opacity: 0;
-    transform: translateY(18px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes marketing-float {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-6px);
-  }
-}
-
-@keyframes marketing-stagger {
-  from {
-    opacity: 0;
-    transform: translateY(12px);
+    transform: translateY(10px);
   }
   to {
     opacity: 1;
@@ -66,26 +122,23 @@ body {
 }
 
 .motion-rise {
-  animation: marketing-rise 0.7s ease-out both;
+  animation: marketing-rise 0.45s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
 .motion-rise-delay {
-  animation-delay: 0.14s;
-}
-
-.motion-float {
-  animation: marketing-float 7s ease-in-out infinite;
-}
-
-.motion-stagger {
-  animation: marketing-stagger 0.55s ease-out both;
+  animation-delay: 0.1s;
 }
 
 @media (prefers-reduced-motion: reduce) {
   .motion-rise,
-  .motion-rise-delay,
-  .motion-float,
-  .motion-stagger {
+  .motion-rise-delay {
     animation: none;
+  }
+
+  .btn-primary:active,
+  .btn-secondary:active,
+  .btn-on-dark:active,
+  .btn-on-dark-outline:active {
+    transform: none;
   }
 }
