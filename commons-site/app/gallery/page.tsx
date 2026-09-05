@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
 import { GALLERY_ITEMS } from '@/lib/gallery'
-import { PRODUCT_NAME } from '@/lib/brand'
 
 export const metadata: Metadata = { title: 'Gallery' }
 
