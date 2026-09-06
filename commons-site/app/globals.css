@@ -10,6 +10,17 @@
   --accent-soft: #d7ebe5;
   --line: #d9d2c6;
   --hero-glow: #143f38;
+
+  /* Type scale — tuned for marketing readability */
+  --text-caption: 0.75rem; /* 12 */
+  --text-small: 0.875rem; /* 14 — nav, meta */
+  --text-ui: 0.9375rem; /* 15 — buttons, chips */
+  --text-body: 1.0625rem; /* 17 — default reading */
+  --text-lede: 1.125rem; /* 18 — support under headlines */
+  --leading-tight: 1.12;
+  --leading-body: 1.55;
+  --leading-lede: 1.5;
+
   background: var(--paper);
   color: var(--ink);
 }
@@ -25,6 +36,80 @@ body {
   background: var(--paper);
   color: var(--ink);
   font-family: var(--font-body), ui-sans-serif, system-ui, sans-serif;
+  font-size: var(--text-body);
+  line-height: var(--leading-body);
+}
+
+/* Display: homepage hero claim. Caps ~52px so it does not shout over the product frame. */
+.type-display {
+  font-family: var(--font-display), ui-serif, Georgia, serif;
+  font-size: clamp(2.125rem, 1.55rem + 2.4vw, 3.25rem);
+  font-weight: 600;
+  letter-spacing: -0.022em;
+  line-height: var(--leading-tight);
+}
+
+/* Interior page H1s — a step under the homepage hero. */
+.type-page {
+  font-family: var(--font-display), ui-serif, Georgia, serif;
+  font-size: clamp(2rem, 1.6rem + 1.7vw, 2.75rem);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: var(--leading-tight);
+}
+
+/* Section H2 */
+.type-section {
+  font-family: var(--font-display), ui-serif, Georgia, serif;
+  font-size: clamp(1.75rem, 1.45rem + 1.2vw, 2.25rem);
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  line-height: 1.18;
+}
+
+/* Surface / card titles */
+.type-title {
+  font-size: clamp(1.25rem, 1.12rem + 0.55vw, 1.5rem);
+  font-weight: 600;
+  letter-spacing: -0.012em;
+  line-height: 1.25;
+}
+
+.type-lede {
+  font-size: var(--text-lede);
+  line-height: var(--leading-lede);
+}
+
+.type-body {
+  font-size: var(--text-body);
+  line-height: var(--leading-body);
+}
+
+.type-small {
+  font-size: var(--text-small);
+  line-height: 1.45;
+}
+
+.type-ui {
+  font-size: var(--text-ui);
+  line-height: 1.35;
+  font-weight: 600;
+}
+
+.type-eyebrow {
+  font-size: 0.8125rem; /* 13 */
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  line-height: 1.35;
+  text-transform: uppercase;
+}
+
+.type-price {
+  font-family: var(--font-display), ui-serif, Georgia, serif;
+  font-size: clamp(2.5rem, 2rem + 2vw, 3.25rem);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.05;
 }
 
 .hero-plane {
@@ -39,9 +124,10 @@ body {
   justify-content: center;
   border-radius: 0.375rem;
   background: var(--ink);
-  padding: 0.75rem 1.25rem;
-  font-size: 0.875rem;
+  padding: 0.8rem 1.3rem;
+  font-size: var(--text-ui);
   font-weight: 600;
+  line-height: 1.25;
   color: var(--paper);
   transition: background-color 150ms ease, transform 120ms ease;
 }
@@ -60,9 +146,10 @@ body {
   justify-content: center;
   border-radius: 0.375rem;
   border: 1.5px solid var(--line);
-  padding: 0.75rem 1.25rem;
-  font-size: 0.875rem;
+  padding: 0.8rem 1.3rem;
+  font-size: var(--text-ui);
   font-weight: 600;
+  line-height: 1.25;
   color: var(--ink);
   transition: background-color 150ms ease, border-color 150ms ease, transform 120ms ease;
 }
@@ -82,9 +169,10 @@ body {
   justify-content: center;
   border-radius: 0.375rem;
   background: #f7f5f0;
-  padding: 0.75rem 1.25rem;
-  font-size: 0.875rem;
+  padding: 0.8rem 1.3rem;
+  font-size: var(--text-ui);
   font-weight: 600;
+  line-height: 1.25;
   color: #0d1e1a;
   transition: background-color 150ms ease, transform 120ms ease;
 }
@@ -99,9 +187,10 @@ body {
   justify-content: center;
   border-radius: 0.375rem;
   border: 1.5px solid rgba(247, 245, 240, 0.5);
-  padding: 0.75rem 1.25rem;
-  font-size: 0.875rem;
+  padding: 0.8rem 1.3rem;
+  font-size: var(--text-ui);
   font-weight: 600;
+  line-height: 1.25;
   color: #f7f5f0;
   transition: background-color 150ms ease, transform 120ms ease;
 }

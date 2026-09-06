@@ -7,16 +7,10 @@ export function MarketingHero() {
   return (
     <section className="hero-plane relative overflow-hidden text-[#f7f5f0]">
       <div className="relative z-10 mx-auto grid max-w-6xl gap-10 px-5 pb-16 pt-16 lg:grid-cols-[minmax(0,0.95fr)_minmax(0,1.15fr)] lg:items-center lg:gap-12 lg:pb-24 lg:pt-20">
-        <div className="motion-rise flex flex-col justify-center gap-6">
-          <p className="text-sm font-semibold uppercase tracking-[0.12em] text-[var(--accent-soft)]">
-            {HERO_EYEBROW}
-          </p>
-          <h1 className="max-w-xl whitespace-pre-line font-[family-name:var(--font-display)] text-4xl leading-[1.05] tracking-tight sm:text-5xl lg:text-6xl">
-            {HERO_HEADLINE}
-          </h1>
-          <p className="max-w-md whitespace-pre-line text-base text-[#d5cec0] sm:text-lg">
-            {HERO_SUPPORT}
-          </p>
+        <div className="motion-rise flex flex-col justify-center gap-5 sm:gap-6">
+          <p className="type-eyebrow text-[var(--accent-soft)]">{HERO_EYEBROW}</p>
+          <h1 className="type-display max-w-xl whitespace-pre-line">{HERO_HEADLINE}</h1>
+          <p className="type-lede max-w-md whitespace-pre-line text-[#d5cec0]">{HERO_SUPPORT}</p>
           <div className="flex flex-wrap gap-3">
             <Link href="/start" className="btn-on-dark">
               {`Start at $${COMMONS_LIST_PRICE_USD}/mo`}

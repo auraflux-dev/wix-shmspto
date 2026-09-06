@@ -7,8 +7,8 @@ export const metadata: Metadata = { title: 'Watch' }
 export default function WatchPage() {
   return (
     <div className="mx-auto max-w-3xl px-5 py-16">
-      <h1 className="font-[family-name:var(--font-display)] text-4xl sm:text-5xl">Watch</h1>
-      <p className="mt-4 whitespace-pre-line text-lg text-[var(--ink-muted)]">
+      <h1 className="type-page">Watch</h1>
+      <p className="type-lede mt-4 whitespace-pre-line text-[var(--ink-muted)]">
         {`Short explainers for ${PRODUCT_NAME}.\nReal videos replace these slots as we film them.`}
       </p>
       <ul className="mt-10 space-y-8">

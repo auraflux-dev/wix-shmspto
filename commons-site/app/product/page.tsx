@@ -12,13 +12,9 @@ export default function ProductPage() {
     <>
       <section className="border-b border-[var(--line)] bg-[var(--paper)]">
         <div className="mx-auto max-w-6xl px-5 py-16 sm:py-20">
-          <p className="text-sm font-semibold uppercase tracking-[0.12em] text-[var(--accent)]">
-            Product
-          </p>
-          <h1 className="mt-2 font-[family-name:var(--font-display)] text-4xl text-[var(--ink)] sm:text-5xl">
-            Run your whole PTO in one place.
-          </h1>
-          <p className="mt-4 max-w-2xl whitespace-pre-line text-lg text-[var(--ink-muted)]">
+          <p className="type-eyebrow text-[var(--accent)]">Product</p>
+          <h1 className="type-page mt-2 text-[var(--ink)]">Run your whole PTO in one place.</h1>
+          <p className="type-lede mt-4 max-w-2xl whitespace-pre-line text-[var(--ink-muted)]">
             {`Public site. Family portal. Staff workspace.\nParents see your school. Not Pavilion.`}
           </p>
           <div className="mt-8 flex flex-wrap gap-3">

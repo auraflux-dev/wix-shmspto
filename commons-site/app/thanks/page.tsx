@@ -7,8 +7,8 @@ export const metadata: Metadata = { title: 'Thanks' }
 export default function ThanksPage() {
   return (
     <div className="mx-auto max-w-lg px-5 py-16">
-      <h1 className="font-[family-name:var(--font-display)] text-4xl sm:text-5xl">Thank you</h1>
-      <p className="mt-4 whitespace-pre-line text-lg text-[var(--ink-muted)]">
+      <h1 className="type-page">Thank you</h1>
+      <p className="type-lede mt-4 whitespace-pre-line text-[var(--ink-muted)]">
         {`If you finished Stripe checkout, we have your school on the list.\nHSKRG will email you within one business day with next steps.`}
       </p>
       <p className="mt-6 whitespace-pre-line text-sm text-[var(--ink-muted)]">
