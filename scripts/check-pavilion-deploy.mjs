@@ -16,7 +16,7 @@ export const PAVILION_TARGETS = {
   'commons-site': {
     label: 'Pavilion marketing',
     base: 'https://onpavilion.com',
-    mustInclude: ['Pavilion'],
+    mustInclude: ['Pavilion', 'Run your whole PTO in one place'],
   },
   'commons-pto': {
     label: 'Commons PTO legacy',
