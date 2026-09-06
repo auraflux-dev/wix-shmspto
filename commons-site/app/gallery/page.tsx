@@ -7,18 +7,16 @@ export const metadata: Metadata = { title: 'Gallery' }
 export default function GalleryPage() {
   return (
     <div className="mx-auto max-w-5xl px-5 py-16">
-      <h1 className="font-[family-name:var(--font-display)] text-4xl sm:text-5xl">Gallery</h1>
-      <p className="mt-4 max-w-2xl whitespace-pre-line text-lg text-[var(--ink-muted)]">
+      <h1 className="type-page">Gallery</h1>
+      <p className="type-lede mt-4 max-w-2xl whitespace-pre-line text-[var(--ink-muted)]">
         {`Real product screens.\nRiverside demo, private trials, and live schools (with permission).`}
       </p>
       <ul className="mt-10 space-y-12">
         {GALLERY_ITEMS.map((item) => (
           <li key={item.id} className="border-t border-[var(--line)] pt-6">
-            <p className="text-xs uppercase tracking-wide text-[var(--ink-muted)]">{item.kind}</p>
-            <h2 className="font-[family-name:var(--font-display)] text-2xl text-[var(--ink)]">
-              {item.title}
-            </h2>
-            <p className="mt-2 max-w-2xl whitespace-pre-line text-sm text-[var(--ink-muted)]">
+            <p className="type-eyebrow text-[var(--ink-muted)]">{item.kind}</p>
+            <h2 className="type-title mt-1 text-[var(--ink)]">{item.title}</h2>
+            <p className="type-body mt-2 max-w-2xl whitespace-pre-line text-[var(--ink-muted)]">
               {item.blurb}
             </p>
             {item.imageSrc ? (

@@ -10,8 +10,8 @@ export default function StartPage() {
   const ready = stripeConfigured()
   return (
     <div className="mx-auto max-w-lg px-5 py-16">
-      <h1 className="font-[family-name:var(--font-display)] text-4xl sm:text-5xl">Start</h1>
-      <p className="mt-4 whitespace-pre-line text-lg text-[var(--ink-muted)]">
+      <h1 className="type-page">Start</h1>
+      <p className="type-lede mt-4 whitespace-pre-line text-[var(--ink-muted)]">
         {`${PRODUCT_NAME} for your school.\n$${COMMONS_LIST_PRICE_USD} per month on Stripe (HSKRG LLC).`}
       </p>
       {!ready ? (

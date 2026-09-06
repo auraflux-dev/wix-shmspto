@@ -7,10 +7,8 @@ export function MarketingCloseCta() {
     <section className="hero-plane text-[#f7f5f0]">
       <div className="mx-auto flex max-w-6xl flex-col gap-8 px-5 py-16 sm:py-20 md:flex-row md:items-end md:justify-between">
         <div className="max-w-xl space-y-4">
-          <p className="whitespace-pre-line font-[family-name:var(--font-display)] text-3xl leading-tight sm:text-4xl">
-            {CLOSE_SLOGAN}
-          </p>
-          <p className="whitespace-pre-line text-[#d5cec0]">{CLOSE_SUPPORT}</p>
+          <p className="type-section whitespace-pre-line text-[#f7f5f0]">{CLOSE_SLOGAN}</p>
+          <p className="type-lede whitespace-pre-line text-[#d5cec0]">{CLOSE_SUPPORT}</p>
         </div>
         <div className="flex flex-wrap gap-3">
           <Link href="/start" className="btn-on-dark">

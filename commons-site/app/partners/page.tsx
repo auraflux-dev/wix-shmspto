@@ -8,8 +8,8 @@ export default function PartnersPage() {
   const partners = loadPartners()
   return (
     <div className="mx-auto max-w-3xl px-5 py-16">
-      <h1 className="font-[family-name:var(--font-display)] text-4xl sm:text-5xl">Partners</h1>
-      <p className="mt-4 whitespace-pre-line text-lg text-[var(--ink-muted)]">
+      <h1 className="type-page">Partners</h1>
+      <p className="type-lede mt-4 whitespace-pre-line text-[var(--ink-muted)]">
         {`Tools that fit a ${PRODUCT_NAME} year.\nCurated. Not a paid ad wall.`}
       </p>
       <ul className="mt-10 space-y-6">

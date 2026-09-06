@@ -28,13 +28,13 @@ export function SiteHeader() {
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-4">
         <Link
           href="/"
-          className="flex items-center gap-2 font-[family-name:var(--font-display)] text-xl tracking-tight text-[var(--ink)] sm:text-2xl"
+          className="flex items-center gap-2 font-[family-name:var(--font-display)] text-[1.25rem] tracking-tight text-[var(--ink)] sm:text-[1.375rem]"
         >
           <PavilionMark className="h-5 w-5 text-[var(--accent)]" />
           {PRODUCT_NAME}
         </Link>
 
-        <nav className="hidden items-center gap-6 text-sm font-medium md:flex">
+        <nav className="type-small hidden items-center gap-6 font-medium md:flex">
           {primaryNav.map((item) => (
             <Link key={item.href} href={item.href} className="text-[var(--ink)] hover:text-[var(--accent)]">
               {item.label}
@@ -49,7 +49,7 @@ export function SiteHeader() {
         </nav>
 
         <div className="flex items-center gap-2 md:hidden">
-          <a href={DEMO_URL} className="btn-primary !px-3 !py-1.5 text-xs">
+          <a href={DEMO_URL} className="btn-primary !px-3 !py-1.5 !text-[0.8125rem]">
             Demo
           </a>
           <button

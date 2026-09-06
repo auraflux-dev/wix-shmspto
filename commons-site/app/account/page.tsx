@@ -40,8 +40,8 @@ export default async function AccountPage({
 
   return (
     <div className="mx-auto max-w-lg px-5 py-16">
-      <h1 className="font-[family-name:var(--font-display)] text-4xl sm:text-5xl">Account</h1>
-      <p className="mt-4 whitespace-pre-line text-lg text-[var(--ink-muted)]">
+      <h1 className="type-page">Account</h1>
+      <p className="type-lede mt-4 whitespace-pre-line text-[var(--ink-muted)]">
         {`Billing for ${PRODUCT_NAME}.\nInvoices and payment methods via HSKRG LLC on Stripe.`}
       </p>
 
