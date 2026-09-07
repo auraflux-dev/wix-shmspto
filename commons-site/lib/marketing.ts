@@ -117,15 +117,6 @@ export const BOARD_HANDOFF = {
   ],
 } as const
 
-export const INTEGRATIONS = [
-  'Next.js',
-  'Square',
-  'Google Workspace',
-  'Canva',
-  'Vercel',
-  'TypeScript',
-] as const
-
 export const CLOSE_SLOGAN = 'Ready when your board is.'
 
 export const CLOSE_SUPPORT =
