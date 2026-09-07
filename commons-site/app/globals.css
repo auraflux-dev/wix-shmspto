@@ -218,9 +218,43 @@ body {
   animation-delay: 0.1s;
 }
 
+.surface-fade {
+  animation: surface-fade 0.42s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.integrations-marquee {
+  animation: integrations-scroll 38s linear infinite;
+}
+
+.integrations-marquee:hover {
+  animation-play-state: paused;
+}
+
+@keyframes surface-fade {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes integrations-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .motion-rise,
-  .motion-rise-delay {
+  .motion-rise-delay,
+  .surface-fade,
+  .integrations-marquee {
     animation: none;
   }
 
