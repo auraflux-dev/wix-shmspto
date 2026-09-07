@@ -9,7 +9,7 @@ export const HERO_HEADLINE =
   'The operating system\nfor modern PTOs.'
 
 export const HERO_SUPPORT =
-  'Public site. Family portal. Staff workspace.\nFewer tools. Cleaner handoffs. Less volunteer burnout.'
+  'Fewer tools. Cleaner handoffs.\nLess volunteer burnout.'
 
 export const PILLARS = [
   {

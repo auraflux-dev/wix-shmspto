@@ -62,15 +62,6 @@ export function MarketingSurfaceTour({ linkToProduct = false }: SurfaceTourProps
         >
           <div key={`${active.id}-copy`} className="surface-fade">
             <p className="type-eyebrow text-[var(--accent)]">{active.tagline}</p>
-            <h3 className="type-title mt-2 text-[var(--ink)]">
-              {linkToProduct ? (
-                <Link href={active.href} className="hover:text-[var(--accent)]">
-                  {active.title}
-                </Link>
-              ) : (
-                active.title
-              )}
-            </h3>
             <p className="type-body mt-3 whitespace-pre-line text-[var(--ink-muted)]">{active.body}</p>
             <ul className="mt-5 space-y-2">
               {active.benefits.map((benefit) => (
@@ -80,6 +71,13 @@ export function MarketingSurfaceTour({ linkToProduct = false }: SurfaceTourProps
                 </li>
               ))}
             </ul>
+            {linkToProduct ? (
+              <p className="mt-5">
+                <Link href={active.href} className="type-ui text-[var(--accent)] hover:underline">
+                  {`More on ${active.title}`}
+                </Link>
+              </p>
+            ) : null}
           </div>
           <div key={`${active.id}-frame`} className="surface-fade">
             <BrowserFrame
