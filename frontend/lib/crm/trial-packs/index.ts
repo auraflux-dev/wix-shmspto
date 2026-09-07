@@ -7,6 +7,7 @@ import type { NavLink } from '@/lib/api/nav'
 import type { MembershipTier } from '@/lib/api/membership'
 import type { BoardMember } from '@/lib/api/board'
 import type { WixEvent } from '@/lib/api/event-model'
+import { DEMO_PUBLIC_BRAND_SLUGS } from '@/lib/crm/demo-public-brands'
 import { trialHostForSlug } from '@/lib/crm/product-host'
 
 export type TrialBrand = {
@@ -331,11 +332,11 @@ export function knownTrialPackSlugs(): string[] {
 }
 
 /**
- * Packs offered on the public demo banner / Brand this tour UI.
- * Keep Spring Hill (and other real prospect packs) sales-link only via ?brand=.
+ * Packs offered on the public demo banner / Preview skins UI.
+ * Keep Spring Hill (and other real prospect packs) off the public demo.
  */
 export function demoPickerPackSlugs(): string[] {
-  return knownTrialPackSlugs().filter((slug) => slug === 'vanilla')
+  return [...DEMO_PUBLIC_BRAND_SLUGS]
 }
 
 /** Light pack for any new trial that has no named prospect pack yet. */
