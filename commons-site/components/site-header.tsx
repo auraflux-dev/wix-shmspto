@@ -8,15 +8,13 @@ import { DEMO_URL } from '@/lib/pricing'
 
 const primaryNav = [
   { href: '/product', label: 'Product' },
+  { href: '/process', label: 'Process' },
   { href: '/pricing', label: 'Pricing' },
-  { href: '/gallery', label: 'Gallery' },
+  { href: '/about', label: 'About' },
 ]
 
 const moreNav = [
-  { href: '/start', label: 'Start' },
-  { href: '/watch', label: 'Watch' },
   { href: '/help', label: 'Help' },
-  { href: '/partners', label: 'Partners' },
   { href: '/account', label: 'Account' },
 ]
 
@@ -40,9 +38,6 @@ export function SiteHeader() {
               {item.label}
             </Link>
           ))}
-          <Link href="/start" className="text-[var(--ink-muted)] hover:text-[var(--ink)]">
-            Start
-          </Link>
           <a href={DEMO_URL} className="btn-primary !px-3 !py-1.5">
             Try the demo
           </a>
