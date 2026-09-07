@@ -20,7 +20,7 @@ export default function AboutPage() {
             <a href={DEMO_URL} className="btn-primary">
               Try the Riverside demo
             </a>
-            <Link href="/start" className="btn-secondary">
+            <Link href="/pricing" className="btn-secondary">
               {`Start at $${COMMONS_LIST_PRICE_USD}/mo`}
             </Link>
           </div>

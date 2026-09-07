@@ -38,9 +38,6 @@ export function SiteHeader() {
               {item.label}
             </Link>
           ))}
-          <Link href="/start" className="text-[var(--ink-muted)] hover:text-[var(--ink)]">
-            Start
-          </Link>
           <a href={DEMO_URL} className="btn-primary !px-3 !py-1.5">
             Try the demo
           </a>
@@ -77,7 +74,7 @@ export function SiteHeader() {
       {open ? (
         <div id="mobile-nav" className="border-t border-[var(--line)] bg-[var(--paper)] md:hidden">
           <nav className="mx-auto flex max-w-6xl flex-col gap-1 px-5 py-4 text-base font-medium">
-            {[...primaryNav, { href: '/start', label: 'Start' }, ...moreNav].map((item) => (
+            {[...primaryNav, ...moreNav].map((item) => (
               <Link
                 key={item.href}
                 href={item.href}

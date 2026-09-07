@@ -20,7 +20,7 @@ export default function ProcessPage() {
             <a href={DEMO_URL} className="btn-primary">
               Start with the demo
             </a>
-            <Link href="/start" className="btn-secondary">
+            <Link href="/pricing" className="btn-secondary">
               {`Start at $${COMMONS_LIST_PRICE_USD}/mo`}
             </Link>
           </div>
