@@ -19,12 +19,10 @@ export function MarketingSurfaceTour({ linkToProduct = false }: SurfaceTourProps
     <section className="bg-[var(--paper)]" id="surfaces">
       <div className="mx-auto max-w-6xl px-5 py-16 sm:py-20">
         <h2 className="type-section text-[var(--ink)]">
-          Three surfaces.
-          <br />
-          One operating system.
+          Public. Family. Staff.
         </h2>
         <p className="type-lede mt-4 max-w-2xl whitespace-pre-line text-[var(--ink-muted)]">
-          {`Parents join and pay on your branded site.\nStaff run membership, events, and communications in one workspace.`}
+          {`Click through the three places your community works.\nSame product. Same brand. Different jobs.`}
         </p>
 
         <div

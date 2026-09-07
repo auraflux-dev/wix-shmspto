@@ -14,10 +14,10 @@ export default function ProductPage() {
         <div className="mx-auto max-w-6xl px-5 py-16 sm:py-20">
           <p className="type-eyebrow text-[var(--accent)]">Product</p>
           <h1 className="type-page mt-2 whitespace-pre-line text-[var(--ink)]">
-            {`The operating system\nfor modern PTOs.`}
+            {`What boards run\nin one place.`}
           </h1>
           <p className="type-lede mt-4 max-w-2xl whitespace-pre-line text-[var(--ink-muted)]">
-            {`Public site. Family portal. Staff workspace.\nParents see your school. Not Pavilion.`}
+            {`Public site, family portal, and staff workspace.\nParents see your school. Not Pavilion.`}
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <Link href="/start" className="btn-primary">

@@ -222,14 +222,6 @@ body {
   animation: surface-fade 0.42s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
-.integrations-marquee {
-  animation: integrations-scroll 38s linear infinite;
-}
-
-.integrations-marquee:hover {
-  animation-play-state: paused;
-}
-
 @keyframes surface-fade {
   from {
     opacity: 0;
@@ -241,20 +233,10 @@ body {
   }
 }
 
-@keyframes integrations-scroll {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-50%);
-  }
-}
-
 @media (prefers-reduced-motion: reduce) {
   .motion-rise,
   .motion-rise-delay,
-  .surface-fade,
-  .integrations-marquee {
+  .surface-fade {
     animation: none;
   }
 

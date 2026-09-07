@@ -30,7 +30,7 @@ export const PILLARS = [
   {
     id: 'streamline',
     title: 'Streamline',
-    body: 'Staff workspaces that survive board turnover.',
+    body: 'Membership, money, and communications in one staff home.',
   },
 ] as const
 
@@ -56,7 +56,7 @@ export const SURFACES = [
     title: 'Family portal',
     shortLabel: '2. Family',
     tagline: 'One household login for fall rush.',
-    body: 'One household login for students, membership, and the store card.\nBuilt for fall rush, not a power-user admin console.',
+    body: 'Students, membership, volunteer shifts, and the store card in one login.',
     benefits: [
       'Household accounts for students and membership',
       'Volunteer shifts and program sign-ups',
@@ -71,12 +71,12 @@ export const SURFACES = [
     id: 'staff',
     title: 'Staff portal',
     shortLabel: '3. Staff',
-    tagline: 'Board workspaces that survive turnover.',
-    body: 'Role workspaces for the board.\nGoogle and Canva sit inside Staff so the next treasurer inherits the year.',
+    tagline: 'The board working desk.',
+    body: 'Membership, money, programs, and communications in one staff home.\nGoogle and Canva live here with the rest of the year.',
     benefits: [
       'Role workspaces for board seats',
       'Google and Canva inside Staff',
-      'Next treasurer inherits the year, not a binder',
+      'Queues for membership, money, and programs',
     ],
     imageSrc: '/gallery/riverside-staff.jpg',
     imageAlt: 'Riverside demo staff home',
