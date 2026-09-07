@@ -8,15 +8,13 @@ import { DEMO_URL } from '@/lib/pricing'
 
 const primaryNav = [
   { href: '/product', label: 'Product' },
+  { href: '/process', label: 'Process' },
   { href: '/pricing', label: 'Pricing' },
-  { href: '/gallery', label: 'Gallery' },
+  { href: '/about', label: 'About' },
 ]
 
 const moreNav = [
-  { href: '/start', label: 'Start' },
-  { href: '/watch', label: 'Watch' },
   { href: '/help', label: 'Help' },
-  { href: '/partners', label: 'Partners' },
   { href: '/account', label: 'Account' },
 ]
 
@@ -79,7 +77,7 @@ export function SiteHeader() {
       {open ? (
         <div id="mobile-nav" className="border-t border-[var(--line)] bg-[var(--paper)] md:hidden">
           <nav className="mx-auto flex max-w-6xl flex-col gap-1 px-5 py-4 text-base font-medium">
-            {[...primaryNav, ...moreNav].map((item) => (
+            {[...primaryNav, { href: '/start', label: 'Start' }, ...moreNav].map((item) => (
               <Link
                 key={item.href}
                 href={item.href}

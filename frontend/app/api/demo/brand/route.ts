@@ -7,7 +7,7 @@
  */
 import { NextRequest, NextResponse } from 'next/server'
 import { PAVILION_BRAND_COOKIE } from '@/lib/crm/active-trial'
-import { knownTrialPackSlugs, trialPackForSlug } from '@/lib/crm/trial-packs'
+import { demoPickerPackSlugs, trialPackForSlug } from '@/lib/crm/trial-packs'
 import { isDemoInstance } from '@/lib/demo/instance'
 
 export const dynamic = 'force-dynamic'
@@ -15,7 +15,7 @@ export const dynamic = 'force-dynamic'
 const MAX_AGE = 60 * 60 * 24 * 30
 
 function packsPublic() {
-  return knownTrialPackSlugs().map((slug) => {
+  return demoPickerPackSlugs().map((slug) => {
     const pack = trialPackForSlug(slug)
     return {
       slug,
@@ -42,7 +42,7 @@ export async function GET(req: NextRequest) {
   return NextResponse.json({
     slug: slug || null,
     packs: packsPublic(),
-    note: 'Default with no pack is Riverside sample demo. Pick a pack to brand this tour as a prospect PTO.',
+    note: 'Default is Riverside. Public picker offers an unbranded preview only. Sales-sent ?brand= links can still load named packs.',
   })
 }
 

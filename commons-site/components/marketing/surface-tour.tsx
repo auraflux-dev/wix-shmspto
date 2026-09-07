@@ -63,7 +63,7 @@ export function MarketingSurfaceTour({ linkToProduct = false }: SurfaceTourProps
           <div key={`${active.id}-copy`} className="surface-fade">
             <p className="type-eyebrow text-[var(--accent)]">{active.tagline}</p>
             <p className="type-body mt-3 whitespace-pre-line text-[var(--ink-muted)]">{active.body}</p>
-            <ul className="mt-5 space-y-2">
+            <ul className="mt-5 grid gap-2 sm:grid-cols-2">
               {active.benefits.map((benefit) => (
                 <li key={benefit} className="type-small flex gap-2 text-[var(--ink)]">
                   <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--accent)]" aria-hidden />
@@ -86,6 +86,11 @@ export function MarketingSurfaceTour({ linkToProduct = false }: SurfaceTourProps
               hostLabel={active.hostLabel}
               large
             />
+            {active.id === 'staff' ? (
+              <p className="type-small mt-3 text-[var(--ink-muted)]">
+                Staff home tiles cover membership, money, programs, events, messages, and role tools.
+              </p>
+            ) : null}
           </div>
         </div>
       </div>

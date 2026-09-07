@@ -330,6 +330,14 @@ export function knownTrialPackSlugs(): string[] {
   return Object.keys(PACKS)
 }
 
+/**
+ * Packs offered on the public demo banner / Brand this tour UI.
+ * Keep Spring Hill (and other real prospect packs) sales-link only via ?brand=.
+ */
+export function demoPickerPackSlugs(): string[] {
+  return knownTrialPackSlugs().filter((slug) => slug === 'vanilla')
+}
+
 /** Light pack for any new trial that has no named prospect pack yet. */
 export function vanillaTrialPack(opts: {
   slug: string

@@ -18,26 +18,23 @@ export function SiteFooter() {
           <Link href="/product" className="text-[var(--ink)] hover:underline">
             Product
           </Link>
+          <Link href="/process" className="text-[var(--ink)] hover:underline">
+            Process
+          </Link>
           <Link href="/pricing" className="text-[var(--ink)] hover:underline">
             Pricing
           </Link>
-          <Link href="/gallery" className="text-[var(--ink)] hover:underline">
-            Gallery
-          </Link>
-          <Link href="/watch" className="text-[var(--ink)] hover:underline">
-            Watch
+          <Link href="/about" className="text-[var(--ink)] hover:underline">
+            About
           </Link>
           <Link href="/help" className="text-[var(--ink)] hover:underline">
             Help
           </Link>
-          <Link href="/partners" className="text-[var(--ink)] hover:underline">
-            Partners
+          <Link href="/start" className="text-[var(--ink)] hover:underline">
+            Start
           </Link>
           <Link href="/account" className="text-[var(--ink)] hover:underline">
             Account
-          </Link>
-          <Link href="/start" className="text-[var(--ink)] hover:underline">
-            Start
           </Link>
           <a href={DEMO_URL} className="text-[var(--ink)] hover:underline">
             Riverside demo
