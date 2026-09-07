@@ -30,7 +30,7 @@ export function MarketingSurfaceTour({ linkToProduct = false }: SurfaceTourProps
         <div
           role="tablist"
           aria-label="Product surfaces"
-          className="mt-10 flex flex-col gap-2 sm:flex-row sm:flex-wrap"
+          className="relative z-20 mt-10 flex flex-col gap-2 sm:flex-row sm:flex-wrap"
         >
           {SURFACES.map((surface, index) => {
             const selected = surface.id === activeId
@@ -42,7 +42,7 @@ export function MarketingSurfaceTour({ linkToProduct = false }: SurfaceTourProps
                 aria-selected={selected}
                 id={`surface-tab-${surface.id}`}
                 aria-controls={`surface-panel-${surface.id}`}
-                className={`rounded-md border px-4 py-3 text-left transition sm:min-w-[10.5rem] sm:flex-1 ${
+                className={`relative z-20 cursor-pointer rounded-md border px-4 py-3 text-left transition sm:min-w-[10.5rem] sm:flex-1 ${
                   selected
                     ? 'border-[var(--ink)] bg-[var(--ink)] text-[var(--paper)]'
                     : 'border-[var(--line)] bg-[var(--paper)] text-[var(--ink)] hover:border-[var(--ink)]'
@@ -60,7 +60,7 @@ export function MarketingSurfaceTour({ linkToProduct = false }: SurfaceTourProps
           role="tabpanel"
           id={`surface-panel-${active.id}`}
           aria-labelledby={`surface-tab-${active.id}`}
-          className="mt-8 grid items-start gap-8 lg:grid-cols-2 lg:gap-12"
+          className="relative z-0 mt-8 grid items-start gap-8 lg:grid-cols-2 lg:gap-12"
         >
           <div key={`${active.id}-copy`} className="surface-fade">
             <p className="type-eyebrow text-[var(--accent)]">{active.tagline}</p>
